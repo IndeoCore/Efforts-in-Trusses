@@ -3,7 +3,6 @@
 int Bar::nextNumber = 1;
 
 Bar::Bar(double angle){
-    
     this->barAngle = angle;
     this->barId = this->getNextNumber();
     Bar::nextNumber++;

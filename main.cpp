@@ -48,7 +48,7 @@ int main() {
     cout << endl << "Para continuar a montagem, vamos adicionar as juntas." << endl;
     cout << "Para construir uma junta, voce precisa incluir 3 parametros:" << endl;
     cout << "1 - Coordenada em X, 2 - Coordenada em Y, 3 - Tipo da junta." << endl;
-    cout << "Tome (0, 0) como o ponto de origem." << endl;
+    cout << "Tome (0, 0) como o primeiro no" << endl;
     cout << "Tipo: digite 0 para um no, 1 para um anel (junta movel), e 2 para uma articulacao (junta estatica)" << endl;
     cout << "Para facilitar os calculos, o anel sempre sera representado com uma reacao na vertical (Anel barra o eixo Y)" << endl;
     cout << "Para toda junta criada, sera necessario dizer, se existirem, quais forcas externas estao aplicadas naquele no" << endl; 
@@ -99,7 +99,7 @@ int main() {
             cout << endl;
         }
     }
-    cout << endl << "Perfeito! Agora irei calcular as forcas das barras (tracao ou commpressao)! Aguarde um instante..." << endl << endl;
+    cout << endl << "Perfeito! Agora irei calcular os modulos das forcas das barras (tracao ou compressao)! Aguarde um instante..." << endl << endl;
     algorithm(joints, barCounter, externalForces);
     return 0;
 }
